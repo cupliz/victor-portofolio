@@ -10,7 +10,7 @@ export default function Title({
   return (
     <div data-aos='flip-up' data-aos-duration="1000">
       <div
-        className={`text-3xl lg:text-5xl text-teal-300 text-center font-orbitron animate__animated animate__wobble ${className}`}
+        className={`text-3xl lg:text-7xl text-teal-300 text-center ${className}`}
       >
         {title}
       </div>

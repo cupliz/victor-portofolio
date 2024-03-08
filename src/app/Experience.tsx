@@ -43,7 +43,7 @@ const content = [
     user-friendly interfaces.`,
     ],
     content: (
-      <div className='h-full w-full  flex items-center justify-center text-white'>
+      <div className='h-full w-full flex items-center justify-center text-white'>
         <img src='/experience-2.png' alt='' className='h-2/3 object-cover' />
       </div>
     ),
@@ -52,8 +52,8 @@ const content = [
 
 export default function Experience() {
   return (
-    <div className='bg-slate-900 z-20 '>
-      <Title title='EXPERIENCE' className='z-20 py-20' />
+    <div id='experience' className='bg-slate-900 pt-20'>
+      <Title title='Experience' />
       <StickyScroll content={content} />
     </div>
   )
@@ -111,7 +111,7 @@ export const StickyScroll = ({
       // animate={{
       //   backgroundColor: backgroundColors[activeCard % backgroundColors.length],
       // }}
-      className='w-screen h-[40rem] overflow-y-auto flex justify-center relative space-x-10'
+      className='w-screen lg:h-[40rem] overflow-y-auto flex justify-center relative space-x-10'
     >
       <div className='relative flex items-start px-4'>
         <div className='max-w-2xl'>

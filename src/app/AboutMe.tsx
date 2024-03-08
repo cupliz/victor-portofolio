@@ -8,17 +8,13 @@ export default function AboutMe() {
   return (
     <div
       id='about'
-      className='max-w-screen-md mx-auto text-center flex flex-col px-3 lg:px-0'
+      className='max-w-screen-md mx-auto text-center flex flex-col px-3 lg:px-0 pt-32'
     >
       <TitleSparkles title='ABOUT ME' />
       <div className='flex flex-col gap-10 mt-10'>
         {aboutMe.map((x, i) => {
           return (
-            <div
-              key={i}
-              data-aos={i % 2 ? 'fade-left' : 'fade-right'}
-              className='animate__animated animate__fadeInUp'
-            >
+            <div key={i} data-aos={i % 2 ? 'fade-left' : 'fade-right'}>
               {x}
             </div>
           )

@@ -34,8 +34,9 @@ export default function ContainerScroll() {
 
   return (
     <div
-      className='h-[60rem] md:h-[80rem] hidden lg:flex items-center justify-center relative p-2 md:p-40'
       ref={containerRef}
+      id='education'
+      className='h-[60rem] md:h-[80rem] hidden lg:flex items-center justify-center relative p-2 md:p-40'
     >
       <div
         data-aos='zoom-in-up'

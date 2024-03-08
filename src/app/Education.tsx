@@ -2,7 +2,7 @@
 'use client'
 import React, { useRef } from 'react'
 import { useScroll, useTransform, motion } from 'framer-motion'
-import { education, users } from './constants'
+import { education } from './constants'
 import Title from '@/components/title'
 import { BackgroundBeams } from '@/components/background-beams'
 

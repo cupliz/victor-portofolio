@@ -31,7 +31,7 @@ export default function Header() {
   const [show, setshow] = useState(false)
   return (
     <div className='fixed h-20 bg-black w-screen shadow-lg shadow-teal-300 z-50 pt-6 px-4'>
-      <nav className='flex justify-between items-center'>
+      <nav className='flex justify-between items-center max-w-screen-xl mx-auto'>
         <a className='text-3xl font-bold leading-none' href='#'>
           <Image src='/logo.png' height={50} width={50} alt='' className='' />
         </a>

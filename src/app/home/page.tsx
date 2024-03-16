@@ -1,25 +1,24 @@
 'use client'
 import React, { useEffect } from 'react'
 import AOS from 'aos'
-import Header from '../Header'
-import AboutMe from '../AboutMe'
-import Education from '../Education'
-import Skills from '../Skills'
-import Experience from '../Experience'
-import Projects from '../Projects'
-import Contact from '../Contact'
+import Header from './Header'
+import AboutMe from './AboutMe'
+import Education from './Education'
+import Skills from './Skills'
+import Experience from './Experience'
+import Projects from './Projects'
+import Contact from './Contact'
 import 'aos/dist/aos.css'
-import { BackgroundBeams } from '@/components/background-beams'
-import Github from '../Github'
+import Github from './Github'
 
 export default function Home() {
   useEffect(() => {
     AOS.init()
   }, [])
   return (
-    <main className='flex flex-col justify-between items-center min-h-screen tracking-widest bg-black text-white mx-auto'>
+    <main className='flex flex-col justify-between items-center w-full min-h-screen tracking-widest bg-black text-white mx-auto'>
       <Header />
-      <section className='z-10'>
+      <section className='z-10 w-full'>
         <AboutMe />
         <Education />
         <Github />

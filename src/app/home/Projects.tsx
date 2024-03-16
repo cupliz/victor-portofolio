@@ -9,7 +9,7 @@ import {
   MotionValue,
 } from 'framer-motion'
 import Link from 'next/link'
-import { projects } from './constants'
+import { projects } from '../constants'
 
 export default function Projects() {
   const ref = React.useRef(null)

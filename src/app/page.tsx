@@ -2,7 +2,6 @@
 import React, { useEffect } from 'react'
 import AOS from 'aos'
 import { BackgroundBeams } from '@/components/background-beams'
-import Header from './Header'
 import Link from 'next/link'
 
 export default function Home() {

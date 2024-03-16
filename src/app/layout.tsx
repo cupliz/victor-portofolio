@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Permanent_Marker, Orbitron, Advent_Pro } from 'next/font/google'
 import '../globals.css'
+import 'aos/dist/aos.css'
 
 const advent = Advent_Pro({
   subsets: ['latin'],

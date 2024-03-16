@@ -148,98 +148,25 @@ export const experience = [
   },
 ]
 
-export const products = [
+export const projects = [
   {
-    title: 'Moonbeam',
-    link: '#',
-    thumbnail:
-      'https://aceternity.com/images/products/thumbnails/new/moonbeam.png',
+    title: 'Portofolio',
+    link: 'https://victor-portofolio.vercel.app/',
+    thumbnail: 'project-portofolio.png',
   },
   {
-    title: 'Cursor',
-    link: '#',
-    thumbnail:
-      'https://aceternity.com/images/products/thumbnails/new/cursor.png',
+    title: 'Checkers',
+    link: 'https://github.com/V1ct0r2002/Sudoku-Solver',
+    thumbnail: 'project-checkers.png',
   },
   {
-    title: 'Rogue',
-    link: '#',
-    thumbnail:
-      'https://aceternity.com/images/products/thumbnails/new/rogue.png',
-  },
-
-  {
-    title: 'Editorially',
-    link: '#',
-    thumbnail:
-      'https://aceternity.com/images/products/thumbnails/new/editorially.png',
+    title: 'Sudoku Solver',
+    link: 'https://github.com/V1ct0r2002/Sudoku-Solver',
+    thumbnail: 'project-sudoku-solver.png',
   },
   {
-    title: 'Editrix AI',
-    link: '#',
-    thumbnail:
-      'https://aceternity.com/images/products/thumbnails/new/editrix.png',
+    title: 'Desktop Cleaner',
+    link: 'https://github.com/V1ct0r2002/Desktop-Cleaner',
+    thumbnail: 'project-desktop-cleaner.png',
   },
-  // {
-  //   title: 'Pixel Perfect',
-  //   link: '#',
-  //   thumbnail:
-  //     'https://aceternity.com/images/products/thumbnails/new/pixelperfect.png',
-  // },
-
-  // {
-  //   title: 'Algochurn',
-  //   link: '#',
-  //   thumbnail:
-  //     'https://aceternity.com/images/products/thumbnails/new/algochurn.png',
-  // },
-  // {
-  //   title: 'Aceternity UI',
-  //   link: '#',
-  //   thumbnail:
-  //     'https://aceternity.com/images/products/thumbnails/new/aceternityui.png',
-  // },
-  // {
-  //   title: 'Tailwind Master Kit',
-  //   link: '#',
-  //   thumbnail:
-  //     'https://aceternity.com/images/products/thumbnails/new/tailwindmasterkit.png',
-  // },
-  // {
-  //   title: 'SmartBridge',
-  //   link: '#',
-  //   thumbnail:
-  //     'https://aceternity.com/images/products/thumbnails/new/smartbridge.png',
-  // },
-  // {
-  //   title: 'Renderwork Studio',
-  //   link: '#',
-  //   thumbnail:
-  //     'https://aceternity.com/images/products/thumbnails/new/renderwork.png',
-  // },
-
-  // {
-  //   title: 'Creme Digital',
-  //   link: '#',
-  //   thumbnail:
-  //     'https://aceternity.com/images/products/thumbnails/new/cremedigital.png',
-  // },
-  // {
-  //   title: 'Golden Bells Academy',
-  //   link: '#',
-  //   thumbnail:
-  //     'https://aceternity.com/images/products/thumbnails/new/goldenbellsacademy.png',
-  // },
-  // {
-  //   title: 'Invoker Labs',
-  //   link: '#',
-  //   thumbnail:
-  //     'https://aceternity.com/images/products/thumbnails/new/invoker.png',
-  // },
-  // {
-  //   title: 'E Free Invoice',
-  //   link: '#',
-  //   thumbnail:
-  //     'https://aceternity.com/images/products/thumbnails/new/efreeinvoice.png',
-  // },
 ]

@@ -14,7 +14,11 @@ export default function AboutMe() {
       <div className='flex flex-col gap-10 mt-10'>
         {aboutMe.map((x, i) => {
           return (
-            <div key={i} data-aos={i % 2 ? 'fade-left' : 'fade-right'}>
+            <div
+              key={i}
+              data-aos={i % 2 ? 'fade-left' : 'fade-right'}
+              data-aos-duration={(i + 1) * 500}
+            >
               {x}
             </div>
           )

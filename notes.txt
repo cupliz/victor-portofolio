@@ -1,0 +1,23 @@
+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
+
+
+X 1. For education, can you make it so that when you click any of the cards there's an animation that brings the card to the front of the screen? And then when you click anywhere outside of the card it goes back to it's original spot
+
+X 2. For the projects section, here are my projects on my GitHub page:
+  https://github.com/V1ct0r2002/Checkers
+  https://github.com/V1ct0r2002/Desktop-Cleaner
+  https://github.com/V1ct0r2002/Sudoku-Solver
+  Find a creative way to display these projects in the project section, and also include the portfolio itself as one of the projects
+
+X 3. This is my GitHub: https://github.com/V1ct0r2002
+  I want to integrate the GitHub api into my portfolio so that it updates live and shows my activity on GitHub. (Any push, pull, fork, etc)
+
+x 4. Can you please include a landing page at the start of the portfolio as well
+
+X 5. there is no animation for the about section when I try to go to the about section through the navlink in the header
+
+X 6. Make the animation for the contact section closer to how it originally was, where the entry slots for name, email, message, and submit slid up into the screen one after the other
+
+X 7. For the LinkedIn button, can you make the colour change upon fading slower to where it fades into the second colour instead of just immediately changes to it? I also want it prop up upon hovering, like how it was in the original portfolio I sent you
+
+X 8. For the submit button in the contact section, I want for it to be filled in with a colour upon hovering, and I also want it to prop upon hovering the same way it did in the original portfolio

@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React, { useState } from 'react'
 
 const menus = [
@@ -32,9 +33,9 @@ export default function Header() {
   return (
     <div className='fixed h-20 bg-black w-screen shadow-lg shadow-teal-300 z-50 pt-6 px-4'>
       <nav className='flex justify-between items-center max-w-screen-xl mx-auto'>
-        <a className='text-3xl font-bold leading-none' href='#'>
+        <Link className='text-3xl font-bold leading-none' href='/'>
           <Image src='/logo.png' height={50} width={50} alt='' className='' />
-        </a>
+        </Link>
         <div className='lg:hidden'>
           <button
             className='navbar-burger flex items-center text-teal-300 p-3'

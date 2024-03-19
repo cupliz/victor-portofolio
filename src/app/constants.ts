@@ -150,7 +150,7 @@ export const experience = [
 
 export const projects = [
   {
-    title: 'Portofolio',
+    title: 'This Portofolio!',
     link: 'https://victor-portofolio.vercel.app/',
     thumbnail: 'project-portofolio.png',
   },

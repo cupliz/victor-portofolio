@@ -102,7 +102,19 @@ export default function ContainerScroll() {
         <BackgroundBeams />
       </div>
 
-      <div className='lg:hidden'>
+      <div className='lg:hidden mt-20'>
+        <div className='space-y-4'>
+          <Title title='Education' />
+          <div data-aos='fade-up' className='text-center text-xl lg:text-3xl'>
+            {education.title}
+          </div>
+          <div className='text-center max-w-screen-md mx-auto'>
+            {education.desc}
+          </div>
+          <div className='text-xl lg:text-3xl mx-10 text-teal-300'>
+            {education.school}:
+          </div>
+        </div>
         {education.studies.map((row, idx: number) => (
           <div
             key={idx}

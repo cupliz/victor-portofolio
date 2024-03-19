@@ -31,27 +31,27 @@ export default function Projects() {
     offset: ['start start', 'end start'],
   })
 
-  const springConfig = { stiffness: 600, damping: 30, bounce: 200 }
+  const springConfig = { stiffness: 100, bounce: 0, damping: 30 }
 
   const translateX = useSpring(
     useTransform(scrollYProgress, [0.2, 0.9], [-500, size.width * 4]),
-    springConfig
+    {}
   )
   const translateY = useSpring(
-    useTransform(scrollYProgress, [0, 1], [0, size.height * 1.4]),
-    springConfig
+    useTransform(scrollYProgress, [0, 0.5], [0, size.height * 0.8]),
+    {}
   )
   const opacity = useSpring(
     useTransform(scrollYProgress, [0, 0.2], [0.2, 1]),
-    springConfig
+    {}
   )
   const rotateX = useSpring(
     useTransform(scrollYProgress, [0, 0.2], [15, 0]),
-    springConfig
+    {}
   )
   const rotateZ = useSpring(
     useTransform(scrollYProgress, [0, 0.2], [20, 0]),
-    springConfig
+    {}
   )
 
   return (
@@ -89,10 +89,10 @@ export default function Projects() {
         <motion.div className='flex flex-row-reverse space-x-reverse space-x-20 mb-20'>
           {projects.map((row) => (
             <motion.div
-              style={{ x: translateX }}
-              whileHover={{ y: 50 }}
               key={row.title}
-              className='group/product h-[30rem] w-[60rem] relative flex-shrink-0 bg-white'
+              style={{ x: translateX }}
+              // whileHover={{ y: 50 }}
+              className='group/product h-[30rem] w-[60rem] relative flex-shrink-0 bg-white hover:border-2 hover:border-teal-300'
             >
               <Link
                 href={row.link}

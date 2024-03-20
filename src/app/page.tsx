@@ -1,7 +1,7 @@
 'use client'
 import React, { useEffect } from 'react'
 import AOS from 'aos'
-import { BackgroundBeams } from '@/components/background-beams'
+// import { BackgroundBeams } from '@/components/background-beams'
 import Link from 'next/link'
 
 export default function Home() {
@@ -25,7 +25,7 @@ export default function Home() {
           </Link>
         </div>
       </div>
-        <BackgroundBeams /> 
+        {/* <BackgroundBeams />  */}
     </main>
   )
 }

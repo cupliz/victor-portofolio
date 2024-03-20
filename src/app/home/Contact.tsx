@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import { BackgroundBeams } from '@/components/background-beams'
+// import { BackgroundBeams } from '@/components/background-beams'
 import Title from '@/components/title'
 
 export default function Contact() {
@@ -12,7 +12,7 @@ export default function Contact() {
   }
   return (
     <div id='contact' className='relative lg:pt-20 pb-48 p-4'>
-      <BackgroundBeams />
+      {/* <BackgroundBeams /> */}
       <Title title='Contact' />
       <form
         onSubmit={handleSubmit}

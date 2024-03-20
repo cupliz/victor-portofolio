@@ -1,7 +1,7 @@
 import React from 'react'
 import { aboutMe } from '../constants'
-import { BackgroundBeams } from '@/components/background-beams'
-import Title from '@/components/title'
+// import { BackgroundBeams } from '@/components/background-beams'
+// import Title from '@/components/title'
 import TitleSparkles from '@/components/sparkles-title'
 
 export default function AboutMe() {
@@ -20,7 +20,7 @@ export default function AboutMe() {
           )
         })}
       </div>
-      <BackgroundBeams />
+      {/* <BackgroundBeams /> */}
     </div>
   )
 }

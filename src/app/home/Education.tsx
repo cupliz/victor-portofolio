@@ -3,7 +3,7 @@ import React, { useRef } from 'react'
 import { useScroll, useTransform, motion } from 'framer-motion'
 import { education } from '../constants'
 import Title from '@/components/title'
-import { BackgroundBeams } from '@/components/background-beams'
+// import { BackgroundBeams } from '@/components/background-beams'
 
 export default function ContainerScroll() {
   const containerRef = useRef<any>(null)
@@ -99,7 +99,7 @@ export default function ContainerScroll() {
             </div>
           </motion.div>
         </div>
-        <BackgroundBeams />
+        {/* <BackgroundBeams /> */}
       </div>
 
       <div className='lg:hidden mt-20'>

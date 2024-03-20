@@ -21,10 +21,10 @@ export default function Home() {
       <section className='z-10 w-full'>
         <AboutMe />
         <Education />
-        <Github />
         <Skills />
         <Experience />
         <Projects />
+        <Github />
         <Contact />
       </section>
       <div className='fixed bottom-4 lg:bottom-10 right-4 lg:right-10 z-40'>

@@ -32,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body
-        className={`${advent.className} ${orbitron.variable} ${marker.variable}`}
+        className={`bg-black ${advent.className} ${orbitron.variable} ${marker.variable}`}
       >
         {children}
       </body>

@@ -1,7 +1,7 @@
 'use client'
 import React, { useEffect } from 'react'
 import AOS from 'aos'
-// import { BackgroundBeams } from '@/components/background-beams'
+import { BackgroundBeams } from '@/components/background-beams'
 import Link from 'next/link'
 
 export default function Home() {
@@ -9,13 +9,18 @@ export default function Home() {
     AOS.init()
   }, [])
   return (
-    <main className='flex items-center min-h-screen tracking-widest bg-black text-white mx-auto'>
-      <div className='flex flex-col mx-auto text-center z-20 gap-5'>
+    <main className='flex items-center h-screen tracking-widest bg-black text-white mx-auto'>
+      <div className='mx-auto text-center z-20 gap-5'>
         <div className='text-4xl lg:text-6xl'>
-          Welcome to <span className='whitespace-nowrap text-teal-300'>Victor Moucattash`s</span>{' '}
+          Welcome to{' '}
+          <span className='whitespace-nowrap text-teal-300'>
+            Victor Moucattash`s
+          </span>{' '}
           Portfolio
         </div>
-        <div className='text-xl lg:text-3xl w-3/4 mx-auto'>Discover my journey in Computer Science</div>
+        <div className='text-xl lg:text-3xl w-3/4 mx-auto'>
+          Discover my journey in Computer Science
+        </div>
         <div className='mt-10 lg:mt-20 '>
           <Link
             href={'/home'}
@@ -25,7 +30,7 @@ export default function Home() {
           </Link>
         </div>
       </div>
-        {/* <BackgroundBeams />  */}
+      <BackgroundBeams />
     </main>
   )
 }

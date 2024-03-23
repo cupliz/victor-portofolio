@@ -12,18 +12,25 @@ import 'aos/dist/aos.css'
 import Github from './Github'
 
 export default function Home() {
+  const [isMobile, setIsMobile]: any = React.useState(null)
   useEffect(() => {
     AOS.init()
+    const checkMobile = () => setIsMobile(window.innerWidth <= 768)
+    checkMobile()
+    window.addEventListener('resize', checkMobile)
+    return () => {
+      window.removeEventListener('resize', checkMobile)
+    }
   }, [])
   return (
     <main className='flex flex-col justify-between items-center w-full min-h-screen tracking-widest bg-black text-white mx-auto'>
       <Header />
       <section className='z-10 w-full'>
-        <AboutMe />
-        <Education />
-        <Skills />
-        <Experience />
-        <Projects />
+        <AboutMe isMobile={isMobile}/>
+        <Education isMobile={isMobile} />
+        <Skills isMobile={isMobile} />
+        <Experience isMobile={isMobile} />
+        <Projects isMobile={isMobile} />
         <Github />
         <Contact />
       </section>

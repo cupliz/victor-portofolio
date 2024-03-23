@@ -23,11 +23,7 @@ const content = [
       patterns in normalized operations, aiming to further improve
       debugging tools and processes.`,
     ],
-    content: (
-      <div className='h-full w-full flex items-center justify-center text-white'>
-        <img src='/experience-1.png' alt='' className='h-full object-cover' />
-      </div>
-    ),
+    image: '/experience-1.png',
   },
   {
     title: 'Full Stack Developer Intern - ENGICON',
@@ -42,19 +38,47 @@ const content = [
     JavaScript, and other web technologies to build responsive and
     user-friendly interfaces.`,
     ],
-    content: (
-      <div className='h-full w-full flex items-center justify-center text-white'>
-        <img src='/experience-2.png' alt='' className='h-2/3 object-cover' />
-      </div>
-    ),
+    image: '/experience-2.png',
   },
 ]
 
-export default function Experience() {
+export default function Experience({ isMobile }: any) {
   return (
     <div id='experience' className='bg-slate-900 pt-20'>
       <Title title='Experience' />
-      <StickyScroll content={content} />
+      {!isMobile && isMobile !== null ? (
+        <StickyScroll content={content} />
+      ) : (
+        <div className='p-4'>
+          {content.map((item, index) => (
+            <div key={item.title + index} className='my-20'>
+              <h2
+                className='text-2xl font-bold text-slate-100'
+                data-aos='fade-up'
+              >
+                {item.title}
+              </h2>
+              <img
+                src={item.image}
+                alt=''
+                className='h-[15rem] object-cover mx-auto'
+                loading='lazy'
+                data-aos='fade-up'
+              />
+              <div
+                className='text-lg text-slate-300 max-w-md mt-10'
+                data-aos='fade-up'
+              >
+                <div className='space-y-4'>
+                  {item.description.map((desc: any, i: number) => {
+                    return <div key={i}>{desc}</div>
+                  })}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   )
 }
@@ -66,7 +90,7 @@ export const StickyScroll = ({
   content: {
     title: string
     description: any
-    content?: React.ReactNode | any
+    image?: React.ReactNode | any
   }[]
   contentClassName?: string
 }) => {
@@ -108,10 +132,7 @@ export const StickyScroll = ({
   return (
     <motion.div
       ref={ref}
-      // animate={{
-      //   backgroundColor: backgroundColors[activeCard % backgroundColors.length],
-      // }}
-      className='w-screen lg:h-[40rem] overflow-y-auto flex justify-center relative space-x-10'
+      className='w-screen h-[40rem] overflow-y-auto flex justify-center relative space-x-10'
     >
       <div className='relative flex items-start px-4'>
         <div className='max-w-2xl'>
@@ -128,21 +149,21 @@ export const StickyScroll = ({
               >
                 {item.title}
               </motion.h2>
-              <motion.p
+              <motion.div
                 initial={{
                   opacity: 0,
                 }}
                 animate={{
                   opacity: activeCard === index ? 1 : 0.3,
                 }}
-                className='text-kg text-slate-300 max-w-md mt-10'
+                className='text-lg text-slate-300 max-w-md mt-10'
               >
                 <div className='space-y-4'>
                   {item.description.map((desc: any, i: number) => {
                     return <div key={i}>{desc}</div>
                   })}
                 </div>
-              </motion.p>
+              </motion.div>
             </div>
           ))}
           <div className='h-40' />
@@ -153,11 +174,20 @@ export const StickyScroll = ({
           background: linearGradients[activeCard % linearGradients.length],
         }}
         className={cn(
-          'hidden lg:block h-60 w-96 rounded-md bg-white sticky top-20 overflow-hidden',
+          'hidden lg:block h-60 w-96 rounded-md bg-slate-900 sticky top-20 overflow-hidden',
           contentClassName
         )}
       >
-        {content[activeCard].content ?? null}
+        {content[activeCard].image ? (
+          <div className='h-full w-full flex items-center justify-center text-white'>
+            <img
+              src={content[activeCard].image}
+              alt=''
+              className='h-full object-cover'
+              loading='lazy'
+            />
+          </div>
+        ) : null}
       </motion.div>
     </motion.div>
   )

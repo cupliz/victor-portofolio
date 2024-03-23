@@ -1,3 +1,4 @@
+'use client'
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { useState } from 'react'
@@ -28,6 +29,7 @@ const separator = () => {
     </svg>
   )
 }
+
 export default function Header() {
   const [show, setshow] = useState(false)
   return (

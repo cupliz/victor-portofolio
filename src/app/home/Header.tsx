@@ -84,7 +84,7 @@ export default function Header() {
               </a> */}
               <button className='navbar-close' onClick={() => setshow(false)}>
                 <svg
-                  className='h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500'
+                  className='h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500 mt-2 mr-2'
                   xmlns='http://www.w3.org/2000/svg'
                   fill='none'
                   viewBox='0 0 24 24'
@@ -99,13 +99,13 @@ export default function Header() {
                 </svg>
               </button>
             </div>
-            <div className='flex flex-col justify-end gap-4 px-2'>
+            <div className='flex flex-col justify-end gap-4 px-2 divide-y divide-slate-500'>
               {menus.map((menu, i) => {
                 return (
                   <a
                     key={i}
                     href={`#${menu.toLowerCase()}`}
-                    className='cursor-pointer hover:text-teal-300  text-right'
+                    className='cursor-pointer hover:text-teal-300 text-right pt-2'
                   >
                     {menu}
                   </a>

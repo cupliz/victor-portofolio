@@ -15,10 +15,9 @@ export default function ContainerScroll({ isMobile }: any) {
   const translateY = useTransform(scrollYProgress, [0, 1], [0, -100])
 
   return (
-    <>
+    <div id='education'>
       <div
         ref={containerRef}
-        id='education'
         className='h-[60rem] lg:h-[80rem] hidden lg:flex items-center justify-center relative p-2 md:p-40'
       >
         {!isMobile && isMobile !== null && (
@@ -113,6 +112,6 @@ export default function ContainerScroll({ isMobile }: any) {
           </div>
         ))}
       </div>
-    </>
+    </div>
   )
 }

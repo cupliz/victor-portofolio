@@ -71,9 +71,9 @@ export default function Header() {
       {show && (
         <div className='navbar-menu relative z-50'>
           <div className='navbar-backdrop fixed opacity-25'></div>
-          <nav className='fixed h-screen top-0 left-0 bottom-0 flex flex-col w-2/3 max-w-sm py-6 px-4 bg-black border-r overflow-y-auto'>
-            <div className='flex items-center mb-8'>
-              <a className='mr-auto text-3xl font-bold leading-none' href='#'>
+          <nav className='fixed h-screen top-0 right-0 bottom-0 flex flex-col w-2/3 max-w-sm py-6 px-4 bg-black border-r overflow-y-auto'>
+            <div className='flex items-center justify-end mb-8'>
+              {/* <a className='mr-auto text-3xl font-bold leading-none' href='#'>
                 <Image
                   src='/logo.png'
                   height={50}
@@ -81,7 +81,7 @@ export default function Header() {
                   alt=''
                   className=''
                 />
-              </a>
+              </a> */}
               <button className='navbar-close' onClick={() => setshow(false)}>
                 <svg
                   className='h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500'
@@ -99,13 +99,13 @@ export default function Header() {
                 </svg>
               </button>
             </div>
-            <div className='flex flex-col gap-4 px-2'>
+            <div className='flex flex-col justify-end gap-4 px-2'>
               {menus.map((menu, i) => {
                 return (
                   <a
                     key={i}
                     href={`#${menu.toLowerCase()}`}
-                    className='cursor-pointer hover:text-teal-300'
+                    className='cursor-pointer hover:text-teal-300  text-right'
                   >
                     {menu}
                   </a>

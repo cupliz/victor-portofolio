@@ -13,7 +13,7 @@ import Title from '@/components/title'
 
 export default function Projects({ isMobile }: any) {
   return (
-    <div className='p-4 lg:p-20 space-y-20'>
+    <div id='projects' className='p-4 lg:p-20 space-y-20'>
       <div className=' flex flex-col items-center'>
         <Title title='Projects' />
         <div
@@ -30,9 +30,7 @@ export default function Projects({ isMobile }: any) {
         slidesPerView={isMobile ? 1 : 2}
         spaceBetween={30}
         loop={true}
-        pagination={{
-          clickable: true,
-        }}
+        pagination={{ clickable: true }}
         navigation={true}
         modules={[Pagination, Navigation]}
         className='h-48 lg:h-[30rem] flex'
@@ -40,7 +38,7 @@ export default function Projects({ isMobile }: any) {
         {projects.map((row) => (
           <SwiperSlide
             key={row.title}
-            className=' hover:border-2 hover:border-teal-300'
+            className='border-2 border-2 hover:border-teal-300'
           >
             <Link
               href={row.link}
